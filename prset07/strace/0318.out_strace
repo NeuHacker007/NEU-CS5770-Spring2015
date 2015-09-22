@@ -1,0 +1,91 @@
+execve("../samples/0318", ["../samples/0318"], [/* 17 vars */]) = 0
+brk(0)                                  = 0x13ae000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a4512e000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f3a45120000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f3a44b49000
+mprotect(0x7f3a44d04000, 2093056, PROT_NONE) = 0
+mmap(0x7f3a44f03000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7f3a44f03000
+mmap(0x7f3a44f09000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3a44f09000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a4511f000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a4511d000
+arch_prctl(ARCH_SET_FS, 0x7f3a4511d740) = 0
+mprotect(0x7f3a44f03000, 16384, PROT_READ) = 0
+mprotect(0x60a000, 4096, PROT_READ)     = 0
+mprotect(0x7f3a45130000, 4096, PROT_READ) = 0
+munmap(0x7f3a45120000, 54711)           = 0
+brk(0)                                  = 0x13ae000
+brk(0x13cf000)                          = 0x13cf000
+access("/var/run/utmpx", F_OK)          = -1 ENOENT (No such file or directory)
+open("/var/run/utmp", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f3a44c7d030, [], SA_RESTORER, 0x7f3a44b7fd40}, {SIG_DFL, [], 0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {type=F_RDLCK, whence=SEEK_SET, start=0, len=0}) = 0
+read(4, "\7\0\0\0000\177\0\0pts/0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {type=F_UNLCK, whence=SEEK_SET, start=0, len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f3a44b7fd40}, NULL, 8) = 0
+kill(32560, SIG_0)                      = -1 EPERM (Operation not permitted)
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f3a44c7d030, [], SA_RESTORER, 0x7f3a44b7fd40}, {SIG_DFL, [], SA_RESTORER, 0x7f3a44b7fd40}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {type=F_RDLCK, whence=SEEK_SET, start=0, len=0}) = 0
+read(4, "\10\0\0\0z|\0\0pts/1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {type=F_UNLCK, whence=SEEK_SET, start=0, len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f3a44b7fd40}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f3a44c7d030, [], SA_RESTORER, 0x7f3a44b7fd40}, {SIG_DFL, [], SA_RESTORER, 0x7f3a44b7fd40}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {type=F_RDLCK, whence=SEEK_SET, start=0, len=0}) = 0
+read(4, "\10\0\0\0q}\0\0pts/2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {type=F_UNLCK, whence=SEEK_SET, start=0, len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f3a44b7fd40}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f3a44c7d030, [], SA_RESTORER, 0x7f3a44b7fd40}, {SIG_DFL, [], SA_RESTORER, 0x7f3a44b7fd40}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {type=F_RDLCK, whence=SEEK_SET, start=0, len=0}) = 0
+read(4, "", 384)                        = 0
+fcntl(4, F_SETLKW, {type=F_UNLCK, whence=SEEK_SET, start=0, len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f3a44b7fd40}, NULL, 8) = 0
+close(4)                                = 0
+open("/proc/uptime", O_RDONLY)          = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a4512d000
+read(4, "49895.37 1154554.00\n", 1024)  = 20
+lseek(4, 0, SEEK_CUR)                   = 20
+close(4)                                = 0
+munmap(0x7f3a4512d000, 4096)            = 0
+open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a4512d000
+read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 118
+lseek(4, -62, SEEK_CUR)                 = 56
+read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 62
+close(4)                                = 0
+munmap(0x7f3a4512d000, 4096)            = 0
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a4512d000
+open("/proc/loadavg", O_RDONLY)         = 4
+read(4, "1.05 0.36 0.18 1/1371 8391\n", 64) = 27
+close(4)                                = 0
+write(1, " 07:50am  up  13:51,  1 user,  l"..., 62) = 62
+close(1)                                = 0
+munmap(0x7f3a4512d000, 4096)            = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

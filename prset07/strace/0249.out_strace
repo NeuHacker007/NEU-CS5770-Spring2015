@@ -1,0 +1,44 @@
+execve("../samples/0249", ["../samples/0249", "31337"], [/* 17 vars */]) = 0
+brk(0)                                  = 0x1a80000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f210426a000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f210425c000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/libgmp.so.10", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\217\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0644, st_size=475168, ...}) = 0
+mmap(NULL, 2570400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2103dd6000
+mprotect(0x7f2103e42000, 2093056, PROT_NONE) = 0
+mmap(0x7f2104041000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x6b000) = 0x7f2104041000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2103a11000
+mprotect(0x7f2103bcc000, 2093056, PROT_NONE) = 0
+mmap(0x7f2103dcb000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7f2103dcb000
+mmap(0x7f2103dd1000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2103dd1000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f210425b000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2104259000
+arch_prctl(ARCH_SET_FS, 0x7f2104259740) = 0
+mprotect(0x7f2103dcb000, 16384, PROT_READ) = 0
+mprotect(0x7f2104041000, 4096, PROT_READ) = 0
+mprotect(0x616000, 4096, PROT_READ)     = 0
+mprotect(0x7f210426c000, 4096, PROT_READ) = 0
+munmap(0x7f210425c000, 54711)           = 0
+brk(0)                                  = 0x1a80000
+brk(0x1aa1000)                          = 0x1aa1000
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2104269000
+write(1, "31337: 31337\n", 13)          = 13
+close(1)                                = 0
+munmap(0x7f2104269000, 4096)            = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

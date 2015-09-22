@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CAPTCHA Attack</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <style>
+            ul a {
+                color: white;
+            }
+
+            ul a:visited {
+                color: red;
+            }
+        </style>
+
+        <h1>Would you like to play a game?</h1>
+
+        <form id="form-input">
+            <input type="text" id="answer" placeholder="Type in the letters you see below..." style="width: 50%;">
+        </form>
+
+        <ul>
+            <li><a href="http://myneu.neu.edu/">a</a></li>
+            <li><a href="http://www.hasbro.com/mylittlepony/en_US/">b</a></li>
+            <li><a href="http://internal.cia.gov/">c</a></li>
+        </ul>
+
+        <div id="result"></div>
+
+        <script>
+            $(document).ready(function() {
+                $('#form-input').submit(function(e) {
+                    var links = [];
+                    var ans = $('#answer').val();
+
+                    if (ans.indexOf('a') >= 0) {
+                        links.push('You are probably affiliated with Northeastern University');
+                    }
+
+                    if (ans.indexOf('b') >= 0) {
+                        links.push('You are into My Little Pony!  Or, you have kids.');
+                    }
+
+                    if (ans.indexOf('c') >= 0) {
+                        links.push('You work for the CIA.');
+                    }
+
+                    var text = '<h2>Here is what I learned about you</h2><ul>';
+                    links.forEach(function(x, i) {
+                        text += '<li>' + x + '</li>';
+                    });
+
+                    text += '</li>';
+
+                    $('#result').html(text);
+                    e.preventDefault();
+                });
+            });
+        </script>
+    </body>
+</html>

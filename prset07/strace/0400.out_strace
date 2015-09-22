@@ -1,0 +1,44 @@
+execve("../samples/0400", ["../samples/0400", "/etc/passwd", "/"], [/* 17 vars */]) = 0
+brk(0)                                  = 0x11dd000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc8bbd9c000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7fc8bbd8e000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fc8bb7b7000
+mprotect(0x7fc8bb972000, 2093056, PROT_NONE) = 0
+mmap(0x7fc8bbb71000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7fc8bbb71000
+mmap(0x7fc8bbb77000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc8bbb77000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc8bbd8d000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc8bbd8b000
+arch_prctl(ARCH_SET_FS, 0x7fc8bbd8b740) = 0
+mprotect(0x7fc8bbb71000, 16384, PROT_READ) = 0
+mprotect(0x61d000, 4096, PROT_READ)     = 0
+mprotect(0x7fc8bbd9e000, 4096, PROT_READ) = 0
+munmap(0x7fc8bbd8e000, 54711)           = 0
+brk(0)                                  = 0x11dd000
+brk(0x11fe000)                          = 0x11fe000
+geteuid()                               = 1000
+ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffd0574a3a0) = -1 ENOTTY (Inappropriate ioctl for device)
+stat("/", {st_mode=S_IFDIR|0755, st_size=256, ...}) = 0
+lstat("/etc/passwd", {st_mode=S_IFREG|0644, st_size=1191, ...}) = 0
+lstat("/passwd", 0x7ffd0574a170)        = -1 ENOENT (No such file or directory)
+rename("/etc/passwd", "/passwd")        = -1 EACCES (Permission denied)
+open("/home/wkr/devel/class/softvulnsec/prset07/coreutils/coreutils-8.23/../gcc-O3/lib/charset.alias", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+write(2, "../samples/0400: ", 17)       = 17
+write(2, "cannot move '/etc/passwd' to '/p"..., 38) = 38
+write(2, ": Permission denied", 19)     = 19
+write(2, "\n", 1)                       = 1
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+close(0)                                = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(1)                           = ?
++++ exited with 1 +++

@@ -1,0 +1,80 @@
+785   execve("./prset03", ["./prset03", "cat", "Makefile"], [/* 15 vars */]) = 0
+785   brk(0)                            = 0x1bb2000
+785   access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+785   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd6669fa000
+785   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+785   open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+785   fstat(3, {st_mode=S_IFREG|0644, st_size=49242, ...}) = 0
+785   mmap(NULL, 49242, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd6669ed000
+785   close(3)                          = 0
+785   access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+785   open("/lib/x86_64-linux-gnu/libssl.so.1.0.0", O_RDONLY|O_CLOEXEC) = 3
+785   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P.\1\0\0\0\0\0"..., 832) = 832
+785   fstat(3, {st_mode=S_IFREG|0644, st_size=383112, ...}) = 0
+785   mmap(NULL, 2478416, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd66657c000
+785   mprotect(0x7fd6665d0000, 2097152, PROT_NONE) = 0
+785   mmap(0x7fd6667d0000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x54000) = 0x7fd6667d0000
+785   close(3)                          = 0
+785   access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+785   open("/lib/x86_64-linux-gnu/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = 3
+785   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\356\5\0\0\0\0\0"..., 832) = 832
+785   fstat(3, {st_mode=S_IFREG|0644, st_size=1926432, ...}) = 0
+785   mmap(NULL, 4036760, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd6661a2000
+785   mprotect(0x7fd666353000, 2093056, PROT_NONE) = 0
+785   mmap(0x7fd666552000, 155648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7fd666552000
+785   mmap(0x7fd666578000, 14488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd666578000
+785   close(3)                          = 0
+785   access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+785   open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+785   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+785   fstat(3, {st_mode=S_IFREG|0755, st_size=1845024, ...}) = 0
+785   mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd6669ec000
+785   mmap(NULL, 3953344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd665ddc000
+785   mprotect(0x7fd665f97000, 2097152, PROT_NONE) = 0
+785   mmap(0x7fd666197000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bb000) = 0x7fd666197000
+785   mmap(0x7fd66619d000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd66619d000
+785   close(3)                          = 0
+785   access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+785   open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+785   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+785   fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+785   mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd665bd8000
+785   mprotect(0x7fd665bdb000, 2093056, PROT_NONE) = 0
+785   mmap(0x7fd665dda000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fd665dda000
+785   close(3)                          = 0
+785   mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd6669eb000
+785   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd6669e9000
+785   arch_prctl(ARCH_SET_FS, 0x7fd6669e9740) = 0
+785   mprotect(0x7fd666197000, 16384, PROT_READ) = 0
+785   mprotect(0x7fd665dda000, 4096, PROT_READ) = 0
+785   mprotect(0x7fd666552000, 110592, PROT_READ) = 0
+785   mprotect(0x7fd6667d0000, 12288, PROT_READ) = 0
+785   mprotect(0x601000, 4096, PROT_READ) = 0
+785   mprotect(0x7fd6669fc000, 4096, PROT_READ) = 0
+785   munmap(0x7fd6669ed000, 49242)     = 0
+785   brk(0)                            = 0x1bb2000
+785   brk(0x1bd4000)                    = 0x1bd4000
+785   getcwd("/home/spatialisotope/prset03", 4096) = 29
+785   lstat("/home/spatialisotope/prset03/Makefile", {st_mode=S_IFREG|0664, st_size=170, ...}) = 0
+785   open("/home/spatialisotope/prset03/Makefile", O_RDONLY) = 3
+785   fstat(3, {st_mode=S_IFREG|0664, st_size=170, ...}) = 0
+785   mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd6668e9000
+785   read(3, ".PHONY: all clean\n\nCC = clang\nCF"..., 1048576) = 170
+785   read(3, "", 1048576)              = 0
+785   fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 1), ...}) = 0
+785   mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd6669f9000
+785   write(1, ".PHONY: all clean\n", 18) = 18
+785   write(1, "\n", 1)                 = 1
+785   write(1, "CC = clang\n", 11)      = 11
+785   write(1, "CFLAGS = -Wall -O0 -ggdb -pipe -"..., 61) = 61
+785   write(1, "LDFLAGS = -lssl -lcrypto -Wl,-z,"..., 42) = 42
+785   write(1, "\n", 1)                 = 1
+785   write(1, "all: prset03\n", 13)    = 13
+785   write(1, "\n", 1)                 = 1
+785   write(1, "clean:\n", 7)           = 7
+785   write(1, "\trm -f prset03\n", 15) = 15
+785   close(3)                          = 0
+785   munmap(0x7fd6668e9000, 1048576)   = 0
+785   brk(0x1bd3000)                    = 0x1bd3000
+785   exit_group(0)                     = ?
+785   +++ exited with 0 +++

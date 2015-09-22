@@ -1,0 +1,39 @@
+execve("../samples/0308", ["../samples/0308", "/etc/passwd"], [/* 17 vars */]) = 0
+brk(0)                                  = 0x61d000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a11ae8000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f3a11ada000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f3a11503000
+mprotect(0x7f3a116be000, 2093056, PROT_NONE) = 0
+mmap(0x7f3a118bd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7f3a118bd000
+mmap(0x7f3a118c3000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3a118c3000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a11ad9000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a11ad7000
+arch_prctl(ARCH_SET_FS, 0x7f3a11ad7740) = 0
+mprotect(0x7f3a118bd000, 16384, PROT_READ) = 0
+mprotect(0x60f000, 4096, PROT_READ)     = 0
+mprotect(0x7f3a11aea000, 4096, PROT_READ) = 0
+munmap(0x7f3a11ada000, 54711)           = 0
+brk(0)                                  = 0x61d000
+brk(0x63e000)                           = 0x63e000
+open("/dev/urandom", O_RDONLY)          = 4
+read(4, "^0\365\212\312j+\177j\223E\22p.\363\310w<\17>\4\340\355=\231\274\303\267\321D_@"..., 2048) = 2048
+close(4)                                = 0
+open("/etc/passwd", O_WRONLY|O_NOCTTY)  = -1 EACCES (Permission denied)
+write(2, "../samples/0308: ", 17)       = 17
+write(2, "/etc/passwd: failed to open for "..., 39) = 39
+write(2, ": Permission denied", 19)     = 19
+write(2, "\n", 1)                       = 1
+close(1)                                = 0
+close(2)                                = 0
+exit_group(1)                           = ?
++++ exited with 1 +++

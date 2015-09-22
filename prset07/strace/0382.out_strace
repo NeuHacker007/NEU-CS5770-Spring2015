@@ -1,0 +1,45 @@
+execve("../samples/0382", ["../samples/0382"], [/* 17 vars */]) = 0
+brk(0)                                  = 0x1c51000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8362cb6000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f8362ca8000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f83626d1000
+mprotect(0x7f836288c000, 2093056, PROT_NONE) = 0
+mmap(0x7f8362a8b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7f8362a8b000
+mmap(0x7f8362a91000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8362a91000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8362ca7000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8362ca5000
+arch_prctl(ARCH_SET_FS, 0x7f8362ca5740) = 0
+mprotect(0x7f8362a8b000, 16384, PROT_READ) = 0
+mprotect(0x607000, 4096, PROT_READ)     = 0
+mprotect(0x7f8362cb8000, 4096, PROT_READ) = 0
+munmap(0x7f8362ca8000, 54711)           = 0
+brk(0)                                  = 0x1c51000
+brk(0x1c72000)                          = 0x1c72000
+open("/dev/urandom", O_RDONLY)          = 4
+read(4, "=*\265\234\227\23\204\22\240E", 10) = 10
+close(4)                                = 0
+gettimeofday({1429948250, 769894}, NULL) = 0
+getpid()                                = 8840
+getppid()                               = 8835
+getuid()                                = 1000
+getgid()                                = 1000
+open("/tmp/tmp.rXzQuDviBV", O_RDWR|O_CREAT|O_EXCL, 0600) = 4
+close(4)                                = 0
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8362cb5000
+write(1, "/tmp/tmp.rXzQuDviBV\n", 20)   = 20
+close(1)                                = 0
+munmap(0x7f8362cb5000, 4096)            = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

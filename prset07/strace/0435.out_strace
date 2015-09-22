@@ -1,0 +1,54 @@
+execve("../samples/0435", ["../samples/0435", "/etc/passwd"], [/* 17 vars */]) = 0
+brk(0)                                  = 0x22e5000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb54e492000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7fb54e484000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fb54dead000
+mprotect(0x7fb54e068000, 2093056, PROT_NONE) = 0
+mmap(0x7fb54e267000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7fb54e267000
+mmap(0x7fb54e26d000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb54e26d000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb54e483000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb54e481000
+arch_prctl(ARCH_SET_FS, 0x7fb54e481740) = 0
+mprotect(0x7fb54e267000, 16384, PROT_READ) = 0
+mprotect(0x60f000, 4096, PROT_READ)     = 0
+mprotect(0x7fb54e494000, 4096, PROT_READ) = 0
+munmap(0x7fb54e484000, 54711)           = 0
+brk(0)                                  = 0x22e5000
+brk(0x2306000)                          = 0x2306000
+open("/etc/passwd", O_RDONLY)           = 4
+fadvise64(4, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1191, ...}) = 0
+open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+fstat(5, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb54e491000
+read(5, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 118
+lseek(5, -62, SEEK_CUR)                 = 56
+read(5, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 62
+close(5)                                = 0
+munmap(0x7fb54e491000, 4096)            = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1191, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb54e491000
+read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1191
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb54e490000
+read(4, "", 4096)                       = 0
+lseek(4, 0, SEEK_CUR)                   = 1191
+close(4)                                = 0
+munmap(0x7fb54e491000, 4096)            = 0
+write(1, "\n\n2015-04-24 18:05              "..., 1305) = 1305
+close(1)                                = 0
+munmap(0x7fb54e490000, 4096)            = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

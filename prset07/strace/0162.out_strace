@@ -1,0 +1,77 @@
+execve("../samples/0162", ["../samples/0162", "/etc/passwd", "4"], [/* 17 vars */]) = 0
+brk(0)                                  = 0xf63000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1a3f943000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f1a3f935000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f1a3f35e000
+mprotect(0x7f1a3f519000, 2093056, PROT_NONE) = 0
+mmap(0x7f1a3f718000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7f1a3f718000
+mmap(0x7f1a3f71e000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1a3f71e000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1a3f934000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1a3f932000
+arch_prctl(ARCH_SET_FS, 0x7f1a3f932740) = 0
+mprotect(0x7f1a3f718000, 16384, PROT_READ) = 0
+mprotect(0x609000, 4096, PROT_READ)     = 0
+mprotect(0x7f1a3f945000, 4096, PROT_READ) = 0
+munmap(0x7f1a3f935000, 54711)           = 0
+brk(0)                                  = 0xf63000
+brk(0xf84000)                           = 0xf84000
+open("/etc/passwd", O_RDONLY)           = 4
+dup2(4, 0)                              = 0
+close(4)                                = 0
+rt_sigaction(SIGALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGHUP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {SIG_IGN, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPROF, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {SIG_IGN, [], 0}, 8) = 0
+rt_sigaction(SIGALRM, {0x402cfc, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f1a3f394d40}, NULL, 8) = 0
+rt_sigaction(SIGHUP, {0x402cfc, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f1a3f394d40}, NULL, 8) = 0
+rt_sigaction(SIGINT, {0x402cfc, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f1a3f394d40}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {0x402cfc, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f1a3f394d40}, NULL, 8) = 0
+rt_sigaction(SIGTERM, {0x402cfc, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f1a3f394d40}, NULL, 8) = 0
+rt_sigaction(SIGIO, {0x402cfc, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f1a3f394d40}, NULL, 8) = 0
+rt_sigaction(SIGPROF, {0x402cfc, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f1a3f394d40}, NULL, 8) = 0
+rt_sigaction(SIGVTALRM, {0x402cfc, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f1a3f394d40}, NULL, 8) = 0
+rt_sigaction(SIGXCPU, {0x402cfc, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f1a3f394d40}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], [], 8) = 0
+open("xx00", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 4
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+read(0, "root:x:0:0:root:/root:/bin/bash\n"..., 8191) = 1191
+fstat(4, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1a3f832000
+write(4, "root:x:0:0:root:/root:/bin/bash\n"..., 117) = 117
+close(4)                                = 0
+munmap(0x7f1a3f832000, 1048576)         = 0
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1a3f942000
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], [], 8) = 0
+open("xx01", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 4
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+fstat(4, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1a3f832000
+read(0, "", 8191)                       = 0
+write(4, "sys:x:3:3:sys:/dev:/usr/sbin/nol"..., 1074) = 1074
+close(4)                                = 0
+munmap(0x7f1a3f832000, 1048576)         = 0
+close(0)                                = 0
+write(1, "117\n1074\n", 9)              = 9
+close(1)                                = 0
+munmap(0x7f1a3f942000, 4096)            = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

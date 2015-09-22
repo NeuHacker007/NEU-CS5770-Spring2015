@@ -1,0 +1,28 @@
+#!/bin/bash
+
+FILE=$1
+
+if [ ! -f "$FILE" ]; then
+    echo "	Error: Please provide existing configuration file,
+	use: cluster_config. It's ready to use! or run python generate_config.py to get cluster_config
+	basic usage:
+		./cluster config_file [FLOAT_VALUE  t 'the threshold'] [reduce 'to get number of sample per cluster']
+		(Examples:)
+		./cluster cluster_config 0.35 
+		./cluster cluster_config 0.45 reduce"
+else
+	echo "	# Strace Generation Do you want to run generate_strace.py? 
+	further process will depend on files located on ../strace."
+	read -p "?(y/n) " RESP
+		if [ "$RESP" = "y" ]; then
+  			python generate_strace.py
+		fi
+    	
+	
+	 
+	echo "		# Now Running the clustring script....."
+	python cluster.py "$FILE" json $2 $3
+fi
+
+#python cluster.py cluster_config
+

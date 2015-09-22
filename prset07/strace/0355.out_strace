@@ -1,0 +1,70 @@
+execve("../samples/0355", ["../samples/0355"], [/* 17 vars */]) = 0
+brk(0)                                  = 0x1f1a000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa29c1c7000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7fa29c1b9000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fa29bbe2000
+mprotect(0x7fa29bd9d000, 2093056, PROT_NONE) = 0
+mmap(0x7fa29bf9c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7fa29bf9c000
+mmap(0x7fa29bfa2000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa29bfa2000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa29c1b8000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa29c1b6000
+arch_prctl(ARCH_SET_FS, 0x7fa29c1b6740) = 0
+mprotect(0x7fa29bf9c000, 16384, PROT_READ) = 0
+mprotect(0x612000, 4096, PROT_READ)     = 0
+mprotect(0x7fa29c1c9000, 4096, PROT_READ) = 0
+munmap(0x7fa29c1b9000, 54711)           = 0
+brk(0)                                  = 0x1f1a000
+brk(0x1f3b000)                          = 0x1f3b000
+open("/etc/mtab", O_RDONLY|O_CLOEXEC)   = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa29c1c6000
+read(4, "/dev/vda9 / btrfs rw,relatime,sp"..., 1024) = 1024
+read(4, "oc ro,nosuid,nodev,noexec,relati"..., 1024) = 86
+read(4, "", 1024)                       = 0
+close(4)                                = 0
+munmap(0x7fa29c1c6000, 4096)            = 0
+stat("/", {st_mode=S_IFDIR|0755, st_size=256, ...}) = 0
+stat("/proc", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/dev", {st_mode=S_IFDIR|0755, st_size=360, ...}) = 0
+stat("/dev/shm", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=40, ...}) = 0
+stat("/dev/mqueue", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=40, ...}) = 0
+stat("/dev/pts", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+stat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=19, ...}) = 0
+stat("/etc/hostname", {st_mode=S_IFREG|0644, st_size=8, ...}) = 0
+stat("/etc/hosts", {st_mode=S_IFREG|0644, st_size=170, ...}) = 0
+stat("/home/spatialisotope", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/proc/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/proc/sysrq-trigger", {st_mode=S_IFREG|0200, st_size=0, ...}) = 0
+stat("/proc/irq", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/proc/bus", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/proc/kcore", {st_mode=S_IFCHR|0666, st_rdev=makedev(1, 3), ...}) = 0
+uname({sys="Linux", node="prset07", ...}) = 0
+statfs("/", {f_type=0x9123683e, f_bsize=4096, f_blocks=16169979, f_bfree=8437073, f_bavail=8040366, f_files=0, f_ffree=0, f_fsid={-1840634026, 266634663}, f_namelen=255, f_frsize=4096}) = 0
+stat("/", {st_mode=S_IFDIR|0755, st_size=256, ...}) = 0
+statfs("/dev", {f_type=0x1021994, f_bsize=4096, f_blocks=3086683, f_bfree=3086683, f_bavail=3086683, f_files=3086683, f_ffree=3086666, f_fsid={0, 0}, f_namelen=255, f_frsize=4096}) = 0
+stat("/dev", {st_mode=S_IFDIR|0755, st_size=360, ...}) = 0
+statfs("/dev/shm", {f_type=0x1021994, f_bsize=4096, f_blocks=16384, f_bfree=16384, f_bavail=16384, f_files=3086683, f_ffree=3086682, f_fsid={0, 0}, f_namelen=255, f_frsize=4096}) = 0
+stat("/dev/shm", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=40, ...}) = 0
+statfs("/etc/hosts", {f_type=0x9123683e, f_bsize=4096, f_blocks=16169979, f_bfree=8437073, f_bavail=8040366, f_files=0, f_ffree=0, f_fsid={-1840634026, 266641360}, f_namelen=255, f_frsize=4096}) = 0
+stat("/etc/hosts", {st_mode=S_IFREG|0644, st_size=170, ...}) = 0
+statfs("/home/spatialisotope", {f_type="NFS_SUPER_MAGIC", f_bsize=1048576, f_blocks=4161130, f_bfree=3497689, f_bavail=3455730, f_files=134217728, f_ffree=133458791, f_fsid={0, 0}, f_namelen=255, f_frsize=1048576}) = 0
+stat("/home/spatialisotope", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa29c1c6000
+write(1, "Filesystem                      "..., 593) = 593
+close(1)                                = 0
+munmap(0x7fa29c1c6000, 4096)            = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

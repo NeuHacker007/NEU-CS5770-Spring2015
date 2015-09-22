@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<h1>CORS</h1>
+
+<p>
+    Here is your message: <span id="msg"></span>
+</p>
+
+<script>
+    $.getJSON('http://localhost:5001/', function(data) {
+        $('#msg').text(data.msg);
+    });
+</script>
+
+{% endblock %}

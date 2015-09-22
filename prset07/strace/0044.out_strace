@@ -1,0 +1,41 @@
+execve("../samples/0044", ["../samples/0044", "/etc/passwd", "/etc/group"], [/* 17 vars */]) = 0
+brk(0)                                  = 0x143e000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7e3b89b000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f7e3b88d000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f7e3b2b6000
+mprotect(0x7f7e3b471000, 2093056, PROT_NONE) = 0
+mmap(0x7f7e3b670000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7f7e3b670000
+mmap(0x7f7e3b676000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7e3b676000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7e3b88c000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7e3b88a000
+arch_prctl(ARCH_SET_FS, 0x7f7e3b88a740) = 0
+mprotect(0x7f7e3b670000, 16384, PROT_READ) = 0
+mprotect(0x60b000, 4096, PROT_READ)     = 0
+mprotect(0x7f7e3b89d000, 4096, PROT_READ) = 0
+munmap(0x7f7e3b88d000, 54711)           = 0
+brk(0)                                  = 0x143e000
+brk(0x145f000)                          = 0x145f000
+stat("/etc/group", {st_mode=S_IFREG|0644, st_size=619, ...}) = 0
+lstat("/etc/passwd", {st_mode=S_IFREG|0644, st_size=1191, ...}) = 0
+linkat(AT_FDCWD, "/etc/passwd", AT_FDCWD, "/etc/group", 0) = -1 EEXIST (File exists)
+open("/home/wkr/devel/class/softvulnsec/prset07/coreutils/coreutils-8.23/../clang-O3/lib/charset.alias", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+write(2, "../samples/0044: ", 17)       = 17
+write(2, "failed to create hard link '/etc"..., 39) = 39
+write(2, ": File exists", 13)           = 13
+write(2, "\n", 1)                       = 1
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+close(0)                                = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(1)                           = ?
++++ exited with 1 +++

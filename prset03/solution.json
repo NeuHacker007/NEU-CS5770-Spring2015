@@ -1,0 +1,1570 @@
+{
+    "module": [
+        {
+            "syscall_2": "brk", 
+            "syscall_1": "execve"
+        }, 
+        {
+            "syscall_2": "access", 
+            "syscall_1": "brk"
+        }, 
+        {
+            "syscall_2": "mmap", 
+            "syscall_1": "access"
+        }, 
+        {
+            "syscall_2": "access", 
+            "syscall_1": "mmap"
+        }, 
+        {
+            "syscall_2": "open", 
+            "syscall_1": "access"
+        }, 
+        {
+            "syscall_2": "fstat", 
+            "syscall_1": "open"
+        }, 
+        {
+            "syscall_2": "mmap", 
+            "syscall_1": "fstat"
+        }, 
+        {
+            "syscall_2": "close", 
+            "syscall_1": "mmap"
+        }, 
+        {
+            "syscall_2": "access", 
+            "syscall_1": "close"
+        }, 
+        {
+            "syscall_2": "read", 
+            "syscall_1": "open"
+        }, 
+        {
+            "syscall_2": "fstat", 
+            "syscall_1": "read"
+        }, 
+        {
+            "syscall_2": "mprotect", 
+            "syscall_1": "mmap"
+        }, 
+        {
+            "syscall_2": "mmap", 
+            "syscall_1": "mprotect"
+        }, 
+        {
+            "syscall_2": "mmap", 
+            "syscall_1": "mmap"
+        }, 
+        {
+            "syscall_2": "mmap", 
+            "syscall_1": "close"
+        }, 
+        {
+            "syscall_2": "arch_prctl", 
+            "syscall_1": "mmap"
+        }, 
+        {
+            "syscall_2": "mprotect", 
+            "syscall_1": "arch_prctl"
+        }, 
+        {
+            "syscall_2": "mprotect", 
+            "syscall_1": "mprotect"
+        }, 
+        {
+            "syscall_2": "munmap", 
+            "syscall_1": "mprotect"
+        }, 
+        {
+            "syscall_2": "brk", 
+            "syscall_1": "munmap"
+        }, 
+        {
+            "syscall_2": "brk", 
+            "syscall_1": "brk"
+        }, 
+        {
+            "syscall_2": "getcwd", 
+            "syscall_1": "brk"
+        }, 
+        {
+            "syscall_2": "lstat", 
+            "syscall_1": "getcwd"
+        }, 
+        {
+            "syscall_2": "open", 
+            "syscall_1": "lstat"
+        }, 
+        {
+            "syscall_2": "read", 
+            "syscall_1": "mmap"
+        }, 
+        {
+            "syscall_2": "read", 
+            "syscall_1": "read"
+        }, 
+        {
+            "syscall_2": "write", 
+            "syscall_1": "mmap"
+        }, 
+        {
+            "syscall_2": "write", 
+            "syscall_1": "write"
+        }, 
+        {
+            "syscall_2": "close", 
+            "syscall_1": "write"
+        }, 
+        {
+            "syscall_2": "munmap", 
+            "syscall_1": "close"
+        }, 
+        {
+            "syscall_2": "exit_group", 
+            "syscall_1": "brk"
+        }, 
+        {
+            "syscall_2": "execve", 
+            "syscall_1": "exit_group"
+        }, 
+        {
+            "syscall_2": "lstat", 
+            "syscall_1": "brk"
+        }, 
+        {
+            "syscall_2": "lstat", 
+            "syscall_1": "lstat"
+        }, 
+        {
+            "syscall_2": "close", 
+            "syscall_1": "read"
+        }, 
+        {
+            "syscall_2": "fstat", 
+            "syscall_1": "munmap"
+        }, 
+        {
+            "syscall_2": "exit_group", 
+            "syscall_1": "write"
+        }
+    ], 
+    "mimicry_possible": true, 
+    "model_augmented": [
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "brk", 
+            "syscall_1": "execve", 
+            "syscall_1_arg": "./prset03"
+        }, 
+        {
+            "syscall_2_arg": "/etc/ld.so.nohwcap", 
+            "syscall_2": "access", 
+            "syscall_1": "brk", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "mmap", 
+            "syscall_1": "access", 
+            "syscall_1_arg": "/etc/ld.so.nohwcap"
+        }, 
+        {
+            "syscall_2_arg": "/etc/ld.so.preload", 
+            "syscall_2": "access", 
+            "syscall_1": "mmap", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "/", 
+            "syscall_2": "open", 
+            "syscall_1": "access", 
+            "syscall_1_arg": "/etc/ld.so."
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "fstat", 
+            "syscall_1": "open", 
+            "syscall_1_arg": "/"
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "mmap", 
+            "syscall_1": "fstat", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "close", 
+            "syscall_1": "mmap", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "/etc/ld.so.nohwcap", 
+            "syscall_2": "access", 
+            "syscall_1": "close", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "read", 
+            "syscall_1": "open", 
+            "syscall_1_arg": "/lib/x86_64-linux-gnu/lib"
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "fstat", 
+            "syscall_1": "read", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "mprotect", 
+            "syscall_1": "mmap", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "mmap", 
+            "syscall_1": "mprotect", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "mmap", 
+            "syscall_1": "mmap", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "mmap", 
+            "syscall_1": "close", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "ARCH_SET_FS", 
+            "syscall_2": "arch_prctl", 
+            "syscall_1": "mmap", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "mprotect", 
+            "syscall_1": "arch_prctl", 
+            "syscall_1_arg": "ARCH_SET_FS"
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "mprotect", 
+            "syscall_1": "mprotect", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "munmap", 
+            "syscall_1": "mprotect", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "brk", 
+            "syscall_1": "munmap", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "brk", 
+            "syscall_1": "brk", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "/home/spatialisotope/prset03", 
+            "syscall_2": "getcwd", 
+            "syscall_1": "brk", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "/home/spatialisotope/prset03/Makefile", 
+            "syscall_2": "lstat", 
+            "syscall_1": "getcwd", 
+            "syscall_1_arg": "/home/spatialisotope/prset03"
+        }, 
+        {
+            "syscall_2_arg": "/home/spatialisotope/", 
+            "syscall_2": "open", 
+            "syscall_1": "lstat", 
+            "syscall_1_arg": "/home/spatialisotope/"
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "read", 
+            "syscall_1": "mmap", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "read", 
+            "syscall_1": "read", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "write", 
+            "syscall_1": "mmap", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "write", 
+            "syscall_1": "write", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "close", 
+            "syscall_1": "write", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "munmap", 
+            "syscall_1": "close", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "exit_group", 
+            "syscall_1": "brk", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "./prset03", 
+            "syscall_2": "execve", 
+            "syscall_1": "exit_group", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "/home", 
+            "syscall_2": "lstat", 
+            "syscall_1": "brk", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "/home/spatialisotope", 
+            "syscall_2": "lstat", 
+            "syscall_1": "lstat", 
+            "syscall_1_arg": "/home"
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "close", 
+            "syscall_1": "read", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "fstat", 
+            "syscall_1": "munmap", 
+            "syscall_1_arg": ""
+        }, 
+        {
+            "syscall_2_arg": "", 
+            "syscall_2": "exit_group", 
+            "syscall_1": "write", 
+            "syscall_1_arg": ""
+        }
+    ], 
+    "mimicry_augmented_possible": false, 
+    "model_fsa": {
+        "module": [
+            {
+                "syscall": "execve", 
+                "successors": null, 
+                "id": 0, 
+                "arg": "./prset03"
+            }, 
+            {
+                "syscall": "brk", 
+                "successors": [
+                    55, 
+                    56, 
+                    57, 
+                    58
+                ], 
+                "id": 1, 
+                "arg": "0"
+            }, 
+            {
+                "syscall": "access", 
+                "successors": [
+                    10, 
+                    11, 
+                    12, 
+                    13, 
+                    14, 
+                    15, 
+                    16, 
+                    17, 
+                    18, 
+                    27, 
+                    37
+                ], 
+                "id": 2, 
+                "arg": "/etc/ld.so.nohwcap"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": [
+                    8, 
+                    9, 
+                    10, 
+                    11, 
+                    12, 
+                    13, 
+                    14, 
+                    15, 
+                    22, 
+                    23, 
+                    24, 
+                    32, 
+                    33, 
+                    34, 
+                    41, 
+                    42, 
+                    46, 
+                    47, 
+                    48, 
+                    49, 
+                    50, 
+                    51, 
+                    52, 
+                    53, 
+                    54, 
+                    55, 
+                    56, 
+                    57, 
+                    58, 
+                    65
+                ], 
+                "id": 3, 
+                "arg": "NULL"
+            }, 
+            {
+                "syscall": "access", 
+                "successors": null, 
+                "id": 4, 
+                "arg": "/etc/ld.so.preload"
+            }, 
+            {
+                "syscall": "open", 
+                "successors": null, 
+                "id": 5, 
+                "arg": "/etc/ld.so.cache"
+            }, 
+            {
+                "syscall": "fstat", 
+                "successors": [
+                    61
+                ], 
+                "id": 6, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": [
+                    4, 
+                    5, 
+                    6, 
+                    7, 
+                    8, 
+                    9, 
+                    10, 
+                    11, 
+                    14, 
+                    15, 
+                    22, 
+                    23, 
+                    24, 
+                    32, 
+                    33, 
+                    34, 
+                    41, 
+                    42, 
+                    46, 
+                    47, 
+                    48, 
+                    49, 
+                    50, 
+                    51, 
+                    52, 
+                    53, 
+                    54, 
+                    55, 
+                    56, 
+                    57, 
+                    58, 
+                    65
+                ], 
+                "id": 7, 
+                "arg": "NULL"
+            }, 
+            {
+                "syscall": "close", 
+                "successors": [
+                    44, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1, 
+                    2
+                ], 
+                "id": 8, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "access", 
+                "successors": [
+                    3, 
+                    4, 
+                    5, 
+                    6, 
+                    18, 
+                    27, 
+                    37
+                ], 
+                "id": 9, 
+                "arg": "/etc/ld.so.nohwcap"
+            }, 
+            {
+                "syscall": "open", 
+                "successors": null, 
+                "id": 10, 
+                "arg": "/lib/x86_64-linux-gnu/libssl.so.1.0.0"
+            }, 
+            {
+                "syscall": "read", 
+                "successors": [
+                    62, 
+                    63, 
+                    64, 
+                    65
+                ], 
+                "id": 11, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "fstat", 
+                "successors": [
+                    61
+                ], 
+                "id": 12, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": [
+                    4, 
+                    5, 
+                    6, 
+                    7, 
+                    8, 
+                    9, 
+                    10, 
+                    11, 
+                    22, 
+                    23, 
+                    24, 
+                    32, 
+                    33, 
+                    34, 
+                    41, 
+                    42, 
+                    46, 
+                    47, 
+                    48, 
+                    49, 
+                    50, 
+                    51, 
+                    52, 
+                    53, 
+                    54, 
+                    55, 
+                    56, 
+                    57, 
+                    58, 
+                    65
+                ], 
+                "id": 13, 
+                "arg": "NULL"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 14, 
+                "arg": "0x7fd6665d0000"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": null, 
+                "id": 15, 
+                "arg": "0x7fd6667d0000"
+            }, 
+            {
+                "syscall": "close", 
+                "successors": [
+                    44, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1, 
+                    2
+                ], 
+                "id": 16, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "access", 
+                "successors": [
+                    3, 
+                    4, 
+                    5, 
+                    6, 
+                    10, 
+                    27, 
+                    37
+                ], 
+                "id": 17, 
+                "arg": "/etc/ld.so.nohwcap"
+            }, 
+            {
+                "syscall": "open", 
+                "successors": null, 
+                "id": 18, 
+                "arg": "/lib/x86_64-linux-gnu/libcrypto.so.1.0.0"
+            }, 
+            {
+                "syscall": "read", 
+                "successors": [
+                    62, 
+                    63, 
+                    64, 
+                    65
+                ], 
+                "id": 19, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "fstat", 
+                "successors": [
+                    61
+                ], 
+                "id": 20, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": [
+                    4, 
+                    5, 
+                    6, 
+                    7, 
+                    8, 
+                    9, 
+                    10, 
+                    11, 
+                    14, 
+                    15, 
+                    32, 
+                    33, 
+                    34, 
+                    41, 
+                    42, 
+                    46, 
+                    47, 
+                    48, 
+                    49, 
+                    50, 
+                    51, 
+                    52, 
+                    53, 
+                    54, 
+                    55, 
+                    56, 
+                    57, 
+                    58, 
+                    65
+                ], 
+                "id": 21, 
+                "arg": "NULL"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 22, 
+                "arg": "0x7fd666353000"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": null, 
+                "id": 23, 
+                "arg": "0x7fd666552000"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": null, 
+                "id": 24, 
+                "arg": "0x7fd666578000"
+            }, 
+            {
+                "syscall": "close", 
+                "successors": [
+                    44, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1, 
+                    2
+                ], 
+                "id": 25, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "access", 
+                "successors": [
+                    3, 
+                    4, 
+                    5, 
+                    6, 
+                    10, 
+                    18, 
+                    37
+                ], 
+                "id": 26, 
+                "arg": "/etc/ld.so.nohwcap"
+            }, 
+            {
+                "syscall": "open", 
+                "successors": null, 
+                "id": 27, 
+                "arg": "/lib/x86_64-linux-gnu/libc.so.6"
+            }, 
+            {
+                "syscall": "read", 
+                "successors": [
+                    62, 
+                    63
+                ], 
+                "id": 28, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "fstat", 
+                "successors": [
+                    61
+                ], 
+                "id": 29, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": [
+                    4, 
+                    5, 
+                    6, 
+                    7, 
+                    8, 
+                    9, 
+                    10, 
+                    11, 
+                    14, 
+                    15, 
+                    22, 
+                    23, 
+                    24, 
+                    32, 
+                    33, 
+                    34, 
+                    41, 
+                    42, 
+                    46, 
+                    47, 
+                    48, 
+                    49, 
+                    50, 
+                    51, 
+                    52, 
+                    53, 
+                    54, 
+                    55, 
+                    56, 
+                    57, 
+                    58, 
+                    65
+                ], 
+                "id": 30, 
+                "arg": "NULL"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": [
+                    4, 
+                    5, 
+                    6, 
+                    7, 
+                    8, 
+                    9, 
+                    10, 
+                    11, 
+                    14, 
+                    15, 
+                    22, 
+                    23, 
+                    24, 
+                    41, 
+                    42, 
+                    46, 
+                    47, 
+                    48, 
+                    49, 
+                    50, 
+                    51, 
+                    52, 
+                    53, 
+                    54, 
+                    55, 
+                    56, 
+                    57, 
+                    58, 
+                    65
+                ], 
+                "id": 31, 
+                "arg": "NULL"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 32, 
+                "arg": "0x7fd665f97000"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": null, 
+                "id": 33, 
+                "arg": "0x7fd666197000"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": null, 
+                "id": 34, 
+                "arg": "0x7fd66619d000"
+            }, 
+            {
+                "syscall": "close", 
+                "successors": [
+                    44, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1, 
+                    2
+                ], 
+                "id": 35, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "access", 
+                "successors": [
+                    3, 
+                    4, 
+                    5, 
+                    6, 
+                    10, 
+                    18, 
+                    27
+                ], 
+                "id": 36, 
+                "arg": "/etc/ld.so.nohwcap"
+            }, 
+            {
+                "syscall": "open", 
+                "successors": null, 
+                "id": 37, 
+                "arg": "/lib/x86_64-linux-gnu/libdl.so.2"
+            }, 
+            {
+                "syscall": "read", 
+                "successors": [
+                    62, 
+                    63, 
+                    64, 
+                    65
+                ], 
+                "id": 38, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "fstat", 
+                "successors": [
+                    61
+                ], 
+                "id": 39, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": [
+                    4, 
+                    5, 
+                    6, 
+                    8, 
+                    9, 
+                    10, 
+                    11, 
+                    14, 
+                    15, 
+                    22, 
+                    23, 
+                    24, 
+                    31, 
+                    32, 
+                    33, 
+                    34, 
+                    46, 
+                    47, 
+                    48, 
+                    49, 
+                    50, 
+                    51, 
+                    52, 
+                    53, 
+                    54, 
+                    55, 
+                    56, 
+                    57, 
+                    58, 
+                    65
+                ], 
+                "id": 40, 
+                "arg": "NULL"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 41, 
+                "arg": "0x7fd665bdb000"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": null, 
+                "id": 42, 
+                "arg": "0x7fd665dda000"
+            }, 
+            {
+                "syscall": "close", 
+                "successors": [
+                    9, 
+                    10, 
+                    11, 
+                    12, 
+                    13, 
+                    14, 
+                    15, 
+                    16, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1
+                ], 
+                "id": 43, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": [
+                    4, 
+                    5, 
+                    6, 
+                    7, 
+                    8, 
+                    9, 
+                    10, 
+                    11, 
+                    14, 
+                    15, 
+                    22, 
+                    23, 
+                    24, 
+                    32, 
+                    33, 
+                    34, 
+                    41, 
+                    42, 
+                    46, 
+                    47, 
+                    48, 
+                    49, 
+                    50, 
+                    51, 
+                    52, 
+                    53, 
+                    54, 
+                    55, 
+                    56, 
+                    57, 
+                    58, 
+                    65
+                ], 
+                "id": 44, 
+                "arg": "NULL"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": [
+                    4, 
+                    5, 
+                    6, 
+                    7, 
+                    8, 
+                    9, 
+                    10, 
+                    11, 
+                    14, 
+                    15, 
+                    22, 
+                    23, 
+                    24, 
+                    32, 
+                    33, 
+                    34, 
+                    41, 
+                    42, 
+                    65
+                ], 
+                "id": 45, 
+                "arg": "NULL"
+            }, 
+            {
+                "syscall": "arch_prctl", 
+                "successors": null, 
+                "id": 46, 
+                "arg": "ARCH_SET_FS"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 47, 
+                "arg": "0x7fd666197000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 48, 
+                "arg": "0x7fd665dda000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 49, 
+                "arg": "0x7fd666552000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 50, 
+                "arg": "0x7fd6667d0000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 51, 
+                "arg": "0x601000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 52, 
+                "arg": "0x7fd6669fc000"
+            }, 
+            {
+                "syscall": "munmap", 
+                "successors": null, 
+                "id": 53, 
+                "arg": "0x7fd6669ed000"
+            }, 
+            {
+                "syscall": "brk", 
+                "successors": [
+                    2, 
+                    3, 
+                    4, 
+                    5
+                ], 
+                "id": 54, 
+                "arg": "0"
+            }, 
+            {
+                "syscall": "brk", 
+                "successors": null, 
+                "id": 55, 
+                "arg": "0x1bd4000"
+            }, 
+            {
+                "syscall": "getcwd", 
+                "successors": null, 
+                "id": 56, 
+                "arg": "/home/spatialisotope/prset03"
+            }, 
+            {
+                "syscall": "lstat", 
+                "successors": null, 
+                "id": 57, 
+                "arg": "/home/spatialisotope/prset03/Makefile"
+            }, 
+            {
+                "syscall": "open", 
+                "successors": null, 
+                "id": 58, 
+                "arg": "/home/spatialisotope/prset03/Makefile"
+            }, 
+            {
+                "syscall": "fstat", 
+                "successors": [
+                    61
+                ], 
+                "id": 59, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": [
+                    4, 
+                    5, 
+                    6, 
+                    8, 
+                    9, 
+                    10, 
+                    11, 
+                    14, 
+                    15, 
+                    22, 
+                    23, 
+                    24, 
+                    31, 
+                    32, 
+                    33, 
+                    34, 
+                    41, 
+                    42, 
+                    46, 
+                    47, 
+                    48, 
+                    49, 
+                    50, 
+                    51, 
+                    52, 
+                    53, 
+                    54, 
+                    55, 
+                    56, 
+                    57, 
+                    58, 
+                    65
+                ], 
+                "id": 60, 
+                "arg": "NULL"
+            }, 
+            {
+                "syscall": "read", 
+                "successors": [
+                    12, 
+                    13, 
+                    14, 
+                    15, 
+                    16, 
+                    17, 
+                    18, 
+                    19, 
+                    63
+                ], 
+                "id": 61, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "read", 
+                "successors": [
+                    12, 
+                    62, 
+                    63, 
+                    64
+                ], 
+                "id": 62, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "fstat", 
+                "successors": null, 
+                "id": 63, 
+                "arg": "1"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": [
+                    4, 
+                    5, 
+                    6, 
+                    7, 
+                    8, 
+                    9, 
+                    10, 
+                    11, 
+                    14, 
+                    15, 
+                    22, 
+                    23, 
+                    24, 
+                    32, 
+                    33, 
+                    34, 
+                    41, 
+                    42, 
+                    46, 
+                    47, 
+                    48, 
+                    49, 
+                    50, 
+                    51, 
+                    52, 
+                    53, 
+                    54, 
+                    55, 
+                    56, 
+                    57, 
+                    58
+                ], 
+                "id": 64, 
+                "arg": "NULL"
+            }, 
+            {
+                "syscall": "write", 
+                "successors": [
+                    75, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1, 
+                    2, 
+                    3, 
+                    4, 
+                    5, 
+                    6
+                ], 
+                "id": 65, 
+                "arg": "1"
+            }, 
+            {
+                "syscall": "write", 
+                "successors": [
+                    75, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1, 
+                    2, 
+                    3, 
+                    4, 
+                    5, 
+                    6
+                ], 
+                "id": 66, 
+                "arg": "1"
+            }, 
+            {
+                "syscall": "write", 
+                "successors": [
+                    75, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1, 
+                    2, 
+                    3, 
+                    4, 
+                    5, 
+                    6
+                ], 
+                "id": 67, 
+                "arg": "1"
+            }, 
+            {
+                "syscall": "write", 
+                "successors": [
+                    75, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1, 
+                    2, 
+                    3, 
+                    4, 
+                    5
+                ], 
+                "id": 68, 
+                "arg": "1"
+            }, 
+            {
+                "syscall": "write", 
+                "successors": [
+                    75, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1, 
+                    2, 
+                    3, 
+                    4
+                ], 
+                "id": 69, 
+                "arg": "1"
+            }, 
+            {
+                "syscall": "write", 
+                "successors": [
+                    75, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1, 
+                    2, 
+                    3
+                ], 
+                "id": 70, 
+                "arg": "1"
+            }, 
+            {
+                "syscall": "write", 
+                "successors": [
+                    75, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1, 
+                    2
+                ], 
+                "id": 71, 
+                "arg": "1"
+            }, 
+            {
+                "syscall": "write", 
+                "successors": [
+                    75, 
+                    76, 
+                    77, 
+                    78, 
+                    0, 
+                    1
+                ], 
+                "id": 72, 
+                "arg": "1"
+            }, 
+            {
+                "syscall": "write", 
+                "successors": [
+                    75, 
+                    76, 
+                    77, 
+                    78, 
+                    0
+                ], 
+                "id": 73, 
+                "arg": "1"
+            }, 
+            {
+                "syscall": "write", 
+                "successors": [
+                    66
+                ], 
+                "id": 74, 
+                "arg": "1"
+            }, 
+            {
+                "syscall": "close", 
+                "successors": [
+                    9, 
+                    10, 
+                    11, 
+                    44
+                ], 
+                "id": 75, 
+                "arg": "3"
+            }, 
+            {
+                "syscall": "munmap", 
+                "successors": null, 
+                "id": 76, 
+                "arg": "0x7fd6668e9000"
+            }, 
+            {
+                "syscall": "brk", 
+                "successors": null, 
+                "id": 77, 
+                "arg": "0x1bd3000"
+            }, 
+            {
+                "syscall": "exit_group", 
+                "successors": null, 
+                "id": 78, 
+                "arg": "0"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 79, 
+                "arg": "0x7fb7fd10b000"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": null, 
+                "id": 80, 
+                "arg": "0x7fb7fd30b000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 81, 
+                "arg": "0x7fb7fce8e000"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": null, 
+                "id": 82, 
+                "arg": "0x7fb7fd08d000"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": null, 
+                "id": 83, 
+                "arg": "0x7fb7fd0b3000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 84, 
+                "arg": "0x7fb7fcad2000"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": null, 
+                "id": 85, 
+                "arg": "0x7fb7fccd2000"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": null, 
+                "id": 86, 
+                "arg": "0x7fb7fccd8000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 87, 
+                "arg": "0x7fb7fc716000"
+            }, 
+            {
+                "syscall": "mmap", 
+                "successors": null, 
+                "id": 88, 
+                "arg": "0x7fb7fc915000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 89, 
+                "arg": "0x7fb7fccd2000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 90, 
+                "arg": "0x7fb7fc915000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 91, 
+                "arg": "0x7fb7fd08d000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 92, 
+                "arg": "0x7fb7fd30b000"
+            }, 
+            {
+                "syscall": "mprotect", 
+                "successors": null, 
+                "id": 93, 
+                "arg": "0x7fb7fd537000"
+            }, 
+            {
+                "syscall": "munmap", 
+                "successors": null, 
+                "id": 94, 
+                "arg": "0x7fb7fd528000"
+            }, 
+            {
+                "syscall": "brk", 
+                "successors": null, 
+                "id": 95, 
+                "arg": "0x1bde000"
+            }, 
+            {
+                "syscall": "lstat", 
+                "successors": null, 
+                "id": 96, 
+                "arg": "/home"
+            }, 
+            {
+                "syscall": "lstat", 
+                "successors": null, 
+                "id": 97, 
+                "arg": "/home/spatialisotope"
+            }, 
+            {
+                "syscall": "lstat", 
+                "successors": null, 
+                "id": 98, 
+                "arg": "/home/spatialisotope/file"
+            }, 
+            {
+                "syscall": "open", 
+                "successors": null, 
+                "id": 99, 
+                "arg": "/home/spatialisotope/file"
+            }, 
+            {
+                "syscall": "munmap", 
+                "successors": null, 
+                "id": 100, 
+                "arg": "0x7fb7fd424000"
+            }, 
+            {
+                "syscall": "brk", 
+                "successors": null, 
+                "id": 101, 
+                "arg": "0x1bdd000"
+            }
+        ]
+    }
+}

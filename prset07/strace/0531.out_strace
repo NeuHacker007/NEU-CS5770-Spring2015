@@ -1,0 +1,138 @@
+execve("../samples/0531", ["../samples/0531"], [/* 17 vars */]) = 0
+brk(0)                                  = 0x16e9000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbf466c7000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7fbf466b9000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fbf460e2000
+mprotect(0x7fbf4629d000, 2093056, PROT_NONE) = 0
+mmap(0x7fbf4649c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7fbf4649c000
+mmap(0x7fbf464a2000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbf464a2000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbf466b8000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbf466b6000
+arch_prctl(ARCH_SET_FS, 0x7fbf466b6740) = 0
+mprotect(0x7fbf4649c000, 16384, PROT_READ) = 0
+mprotect(0x617000, 4096, PROT_READ)     = 0
+mprotect(0x7fbf466c9000, 4096, PROT_READ) = 0
+munmap(0x7fbf466b9000, 54711)           = 0
+brk(0)                                  = 0x16e9000
+brk(0x170a000)                          = 0x170a000
+open("/etc/mtab", O_RDONLY|O_CLOEXEC)   = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbf466c6000
+read(4, "/dev/vda9 / btrfs rw,relatime,sp"..., 1024) = 1024
+read(4, "oc ro,nosuid,nodev,noexec,relati"..., 1024) = 86
+read(4, "", 1024)                       = 0
+close(4)                                = 0
+munmap(0x7fbf466c6000, 4096)            = 0
+stat("/", {st_mode=S_IFDIR|0755, st_size=256, ...}) = 0
+stat("/dev", {st_mode=S_IFDIR|0755, st_size=360, ...}) = 0
+stat("/dev/shm", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=40, ...}) = 0
+stat("/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=19, ...}) = 0
+stat("/etc/hostname", {st_mode=S_IFREG|0644, st_size=8, ...}) = 0
+stat("/etc/hosts", {st_mode=S_IFREG|0644, st_size=170, ...}) = 0
+stat("/proc/kcore", {st_mode=S_IFCHR|0666, st_rdev=makedev(1, 3), ...}) = 0
+newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 4
+fcntl(4, F_GETFD)                       = 0
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+fstat(4, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_NOFOLLOW)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbf465b5000
+newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD, 3)                    = 5
+fcntl(5, F_GETFD)                       = 0
+fcntl(5, F_SETFD, FD_CLOEXEC)           = 0
+getdents(4, /* 15 entries */, 1048576)  = 512
+getdents(4, /* 0 entries */, 1048576)   = 0
+munmap(0x7fbf465b5000, 1052672)         = 0
+close(4)                                = 0
+newfstatat(5, "xx00", {st_mode=S_IFREG|0664, st_size=117, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "generate_strace.py", {st_mode=S_IFREG|0664, st_size=2589, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "xx01", {st_mode=S_IFREG|0664, st_size=1074, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "cluster_config", {st_mode=S_IFREG|0664, st_size=1513688, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "xaa", {st_mode=S_IFREG, st_size=1191, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "generate_config.py", {st_mode=S_IFREG|0664, st_size=1490, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, ".nfs0000000004580720000001ab", {st_mode=S_IFREG|0775, st_size=543, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, ".nfs000000000458071e000001ad", {st_mode=S_IFREG|0775, st_size=552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "samples.json", {st_mode=S_IFREG|0644, st_size=32886, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "graphics", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "graphics", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 4
+fcntl(4, F_GETFD)                       = 0
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+fstat(4, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY|O_NOFOLLOW)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+brk(0x1822000)                          = 0x1822000
+newfstatat(5, "graphics", {st_mode=S_IFDIR|0775, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD, 3)                    = 6
+fcntl(6, F_GETFD)                       = 0
+fcntl(6, F_SETFD, FD_CLOEXEC)           = 0
+getdents(4, /* 44 entries */, 1048576)  = 1392
+getdents(4, /* 0 entries */, 1048576)   = 0
+close(4)                                = 0
+newfstatat(6, "40.png", {st_mode=S_IFREG|0664, st_size=21479, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "24.png", {st_mode=S_IFREG|0664, st_size=43396, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "9.png", {st_mode=S_IFREG|0664, st_size=22598, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "22.png", {st_mode=S_IFREG|0664, st_size=25719, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "26.png", {st_mode=S_IFREG|0664, st_size=21072, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "7.png", {st_mode=S_IFREG|0664, st_size=22942, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "8.png", {st_mode=S_IFREG|0664, st_size=21510, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "33.png", {st_mode=S_IFREG|0664, st_size=23956, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "1.png", {st_mode=S_IFREG|0664, st_size=83711, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "19.png", {st_mode=S_IFREG|0664, st_size=21224, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "15.png", {st_mode=S_IFREG|0664, st_size=35966, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "13.png", {st_mode=S_IFREG|0664, st_size=23594, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "18.png", {st_mode=S_IFREG|0664, st_size=19701, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "6.png", {st_mode=S_IFREG|0664, st_size=22238, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "10.png", {st_mode=S_IFREG|0664, st_size=21586, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "28.png", {st_mode=S_IFREG|0664, st_size=19095, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "1-3.png", {st_mode=S_IFREG|0664, st_size=50496, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "16.png", {st_mode=S_IFREG|0664, st_size=23387, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "30.png", {st_mode=S_IFREG|0664, st_size=20887, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "12.png", {st_mode=S_IFREG|0664, st_size=24502, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "21.png", {st_mode=S_IFREG|0664, st_size=19919, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "39.png", {st_mode=S_IFREG|0664, st_size=22671, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "29.png", {st_mode=S_IFREG|0664, st_size=20228, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "35.png", {st_mode=S_IFREG|0664, st_size=24078, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "34.png", {st_mode=S_IFREG|0664, st_size=21070, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "25.png", {st_mode=S_IFREG|0664, st_size=21441, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "2.png", {st_mode=S_IFREG|0664, st_size=20853, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "4.png", {st_mode=S_IFREG|0664, st_size=25754, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "37.png", {st_mode=S_IFREG|0664, st_size=21527, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "14.png", {st_mode=S_IFREG|0664, st_size=25349, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "38.png", {st_mode=S_IFREG|0664, st_size=25347, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "31.png", {st_mode=S_IFREG|0664, st_size=24972, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "20.png", {st_mode=S_IFREG|0664, st_size=20428, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "11.png", {st_mode=S_IFREG|0664, st_size=22736, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "1-2.png", {st_mode=S_IFREG|0664, st_size=39364, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "32.png", {st_mode=S_IFREG|0664, st_size=19608, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "3.png", {st_mode=S_IFREG|0664, st_size=21985, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "17.png", {st_mode=S_IFREG|0664, st_size=19865, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "23.png", {st_mode=S_IFREG|0664, st_size=23535, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "36.png", {st_mode=S_IFREG|0664, st_size=24652, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "5.png", {st_mode=S_IFREG|0664, st_size=27577, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "27.png", {st_mode=S_IFREG|0664, st_size=20864, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbf466c6000
+write(1, "1148\t./graphics\n", 16)      = 16
+newfstatat(5, "cluster.py", {st_mode=S_IFREG|0664, st_size=3348, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "cluster", {st_mode=S_IFREG|0775, st_size=568, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, ".nfs000000000458071f000001ac", {st_mode=S_IFREG|0775, st_size=559, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "2708\t.\n", 7)                = 7
+close(1)                                = 0
+munmap(0x7fbf466c6000, 4096)            = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

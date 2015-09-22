@@ -1,0 +1,36 @@
+execve("../samples/0448", ["../samples/0448"], [/* 17 vars */]) = 0
+brk(0)                                  = 0x1bf5000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4425bac000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f4425b9e000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f44255c7000
+mprotect(0x7f4425782000, 2093056, PROT_NONE) = 0
+mmap(0x7f4425981000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7f4425981000
+mmap(0x7f4425987000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4425987000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4425b9d000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4425b9b000
+arch_prctl(ARCH_SET_FS, 0x7f4425b9b740) = 0
+mprotect(0x7f4425981000, 16384, PROT_READ) = 0
+mprotect(0x60e000, 4096, PROT_READ)     = 0
+mprotect(0x7f4425bae000, 4096, PROT_READ) = 0
+munmap(0x7f4425b9e000, 54711)           = 0
+brk(0)                                  = 0x1bf5000
+brk(0x1c16000)                          = 0x1c16000
+ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7fffed7d5cd0) = -1 ENOTTY (Inappropriate ioctl for device)
+write(2, "../samples/0448: ", 17)       = 17
+write(2, "standard input", 14)          = 14
+write(2, ": Inappropriate ioctl for device", 32) = 32
+write(2, "\n", 1)                       = 1
+close(1)                                = 0
+close(2)                                = 0
+exit_group(1)                           = ?
++++ exited with 1 +++

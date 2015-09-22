@@ -1,0 +1,36 @@
+execve("../samples/0754", ["../samples/0754"], [/* 17 vars */]) = 0
+brk(0)                                  = 0xe99000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3abd9b8000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f3abd9aa000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f3abd3d3000
+mprotect(0x7f3abd58e000, 2093056, PROT_NONE) = 0
+mmap(0x7f3abd78d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7f3abd78d000
+mmap(0x7f3abd793000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3abd793000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3abd9a9000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3abd9a7000
+arch_prctl(ARCH_SET_FS, 0x7f3abd9a7740) = 0
+mprotect(0x7f3abd78d000, 16384, PROT_READ) = 0
+mprotect(0x606000, 4096, PROT_READ)     = 0
+mprotect(0x7f3abd9ba000, 4096, PROT_READ) = 0
+munmap(0x7f3abd9aa000, 54711)           = 0
+brk(0)                                  = 0xe99000
+brk(0xeba000)                           = 0xeba000
+getcwd("/home/spatialisotope/prset07/clustering", 4096) = 40
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3abd9b7000
+write(1, "/home/spatialisotope/prset07/clu"..., 40) = 40
+close(1)                                = 0
+munmap(0x7f3abd9b7000, 4096)            = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

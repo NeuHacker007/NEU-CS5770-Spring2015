@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}XSS!{% endblock %}
+
+{% block content %}
+
+<h1>Hello</h1>
+<div id="content">
+    <p>Your message is: <span id="msg">{{msg|safe}}</span></p>
+</div>
+
+{% endblock %}

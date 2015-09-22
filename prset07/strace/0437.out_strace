@@ -1,0 +1,107 @@
+execve("../samples/0437", ["../samples/0437", "/etc/passwd"], [/* 17 vars */]) = 0
+brk(0)                                  = 0x1e67000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f21b3b91000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f21b3b83000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0po\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=141574, ...}) = 0
+mmap(NULL, 2217264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f21b3753000
+mprotect(0x7f21b376c000, 2093056, PROT_NONE) = 0
+mmap(0x7f21b396b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x18000) = 0x7f21b396b000
+mmap(0x7f21b396d000, 13616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f21b396d000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f21b338e000
+mprotect(0x7f21b3549000, 2093056, PROT_NONE) = 0
+mmap(0x7f21b3748000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7f21b3748000
+mmap(0x7f21b374e000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f21b374e000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f21b3b82000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f21b3b80000
+arch_prctl(ARCH_SET_FS, 0x7f21b3b80740) = 0
+mprotect(0x7f21b3748000, 16384, PROT_READ) = 0
+mprotect(0x7f21b396b000, 4096, PROT_READ) = 0
+mprotect(0x618000, 4096, PROT_READ)     = 0
+mprotect(0x7f21b3b93000, 4096, PROT_READ) = 0
+munmap(0x7f21b3b83000, 54711)           = 0
+set_tid_address(0x7f21b3b80a10)         = 9225
+set_robust_list(0x7f21b3b80a20, 24)     = 0
+futex(0x7ffc5440afe0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, 7f21b3b80740) = -1 EAGAIN (Resource temporarily unavailable)
+rt_sigaction(SIGRTMIN, {0x7f21b37599f0, [], SA_RESTORER|SA_SIGINFO, 0x7f21b3763340}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7f21b3759a80, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f21b3763340}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(0)                                  = 0x1e67000
+brk(0x1e88000)                          = 0x1e88000
+rt_sigaction(SIGALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGHUP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {SIG_IGN, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPROF, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {SIG_IGN, [], 0}, 8) = 0
+rt_sigaction(SIGALRM, {0x407020, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f21b3763340}, NULL, 8) = 0
+rt_sigaction(SIGHUP, {0x407020, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f21b3763340}, NULL, 8) = 0
+rt_sigaction(SIGINT, {0x407020, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f21b3763340}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {0x407020, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f21b3763340}, NULL, 8) = 0
+rt_sigaction(SIGTERM, {0x407020, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f21b3763340}, NULL, 8) = 0
+rt_sigaction(SIGIO, {0x407020, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f21b3763340}, NULL, 8) = 0
+rt_sigaction(SIGPROF, {0x407020, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f21b3763340}, NULL, 8) = 0
+rt_sigaction(SIGVTALRM, {0x407020, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f21b3763340}, NULL, 8) = 0
+rt_sigaction(SIGXCPU, {0x407020, [HUP INT QUIT ALRM TERM XCPU VTALRM PROF IO], SA_RESTORER, 0x7f21b3763340}, NULL, 8) = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [CHLD], SA_RESTORER|SA_RESTART, 0x7f21b33c4d40}, {SIG_DFL, [], 0}, 8) = 0
+stat("/etc/passwd", {st_mode=S_IFREG|0644, st_size=1191, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/etc/passwd", R_OK)             = 0
+sched_getaffinity(0, 128, {ffffff, 0})  = 16
+open("/etc/passwd", O_RDONLY)           = 4
+fadvise64(4, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1191, ...}) = 0
+getrlimit(RLIMIT_DATA, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_AS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_RSS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f21b3b90000
+read(5, "MemTotal:       24693468 kB\nMemF"..., 1024) = 1024
+close(5)                                = 0
+munmap(0x7f21b3b90000, 4096)            = 0
+open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 5
+fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f21b3b90000
+read(5, "MemTotal:       24693468 kB\nMemF"..., 1024) = 1024
+close(5)                                = 0
+munmap(0x7f21b3b90000, 4096)            = 0
+mmap(NULL, 155648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f21b3b5a000
+fstat(4, {st_mode=S_IFREG|0644, st_size=1191, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f21b3b90000
+read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1191
+read(4, "", 4096)                       = 0
+lseek(4, 0, SEEK_CUR)                   = 1191
+close(4)                                = 0
+munmap(0x7f21b3b90000, 4096)            = 0
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f21b3b90000
+write(1, "backup:x:34:34:backup:/var/backu"..., 1191) = 1191
+munmap(0x7f21b3b5a000, 155648)          = 0
+close(1)                                = 0
+munmap(0x7f21b3b90000, 4096)            = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

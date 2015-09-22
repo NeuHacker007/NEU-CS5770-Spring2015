@@ -1,0 +1,37 @@
+execve("../samples/0591", ["../samples/0591", "--input=0", "ls"], [/* 17 vars */]) = 0
+brk(0)                                  = 0xc26000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f10d4494000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f10d4486000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f10d3eaf000
+mprotect(0x7f10d406a000, 2093056, PROT_NONE) = 0
+mmap(0x7f10d4269000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7f10d4269000
+mmap(0x7f10d426f000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f10d426f000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f10d4485000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f10d4483000
+arch_prctl(ARCH_SET_FS, 0x7f10d4483740) = 0
+mprotect(0x7f10d4269000, 16384, PROT_READ) = 0
+mprotect(0x612000, 4096, PROT_READ)     = 0
+mprotect(0x7f10d4496000, 4096, PROT_READ) = 0
+munmap(0x7f10d4486000, 54711)           = 0
+brk(0)                                  = 0xc26000
+brk(0xc47000)                           = 0xc47000
+stat("../samples/libstdbuf.so", 0x7ffc30c0d390) = -1 ENOENT (No such file or directory)
+stat("/home/wkr/devel/class/softvulnsec/prset07/coreutils/coreutils-8.23/../gcc-O0/libexec/coreutils/libstdbuf.so", 0x7ffc30c0d390) = -1 ENOENT (No such file or directory)
+open("/home/wkr/devel/class/softvulnsec/prset07/coreutils/coreutils-8.23/../gcc-O0/lib/charset.alias", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+write(2, "../samples/0591: ", 17)       = 17
+write(2, "failed to find 'libstdbuf.so'", 29) = 29
+write(2, "\n", 1)                       = 1
+close(1)                                = 0
+close(2)                                = 0
+exit_group(125)                         = ?
++++ exited with 125 +++

@@ -1,0 +1,87 @@
+execve("../samples/0452", ["../samples/0452"], [/* 17 vars */]) = 0
+brk(0)                                  = 0x10b9000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f579af0c000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f579aefe000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f579a927000
+mprotect(0x7f579aae2000, 2093056, PROT_NONE) = 0
+mmap(0x7f579ace1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ba000) = 0x7f579ace1000
+mmap(0x7f579ace7000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f579ace7000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f579aefd000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f579aefb000
+arch_prctl(ARCH_SET_FS, 0x7f579aefb740) = 0
+mprotect(0x7f579ace1000, 16384, PROT_READ) = 0
+mprotect(0x606000, 4096, PROT_READ)     = 0
+mprotect(0x7f579af0e000, 4096, PROT_READ) = 0
+munmap(0x7f579aefe000, 54711)           = 0
+brk(0)                                  = 0x10b9000
+brk(0x10da000)                          = 0x10da000
+open("/etc/hostid", O_RDONLY)           = -1 ENOENT (No such file or directory)
+uname({sys="Linux", node="prset07", ...}) = 0
+getpid()                                = 9330
+open("/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=19, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f579af0b000
+read(4, "nameserver 8.8.8.8\n", 4096)   = 19
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+munmap(0x7f579af0b000, 4096)            = 0
+uname({sys="Linux", node="prset07", ...}) = 0
+socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=475, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f579af0b000
+read(4, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 475
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+munmap(0x7f579af0b000, 4096)            = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=54711, ...}) = 0
+mmap(NULL, 54711, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f579aefe000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\"\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0644, st_size=47712, ...}) = 0
+mmap(NULL, 2144392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f579a71b000
+mprotect(0x7f579a726000, 2093056, PROT_NONE) = 0
+mmap(0x7f579a925000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xa000) = 0x7f579a925000
+close(4)                                = 0
+mprotect(0x7f579a925000, 4096, PROT_READ) = 0
+munmap(0x7f579aefe000, 54711)           = 0
+open("/etc/host.conf", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=92, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f579af0b000
+read(4, "# The \"order\" line is only used "..., 4096) = 92
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+munmap(0x7f579af0b000, 4096)            = 0
+open("/etc/hosts", O_RDONLY|O_CLOEXEC)  = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=170, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f579af0b000
+read(4, "172.17.0.37\tprset07\n127.0.0.1\tlo"..., 4096) = 170
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+munmap(0x7f579af0b000, 4096)            = 0
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f579af0b000
+write(1, "11ac2500\n", 9)               = 9
+close(1)                                = 0
+munmap(0x7f579af0b000, 4096)            = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

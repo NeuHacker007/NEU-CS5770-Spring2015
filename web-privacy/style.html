@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Style Attack</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Where would you like to go today?</h1>
+        <div id="result"></div>
+        <ul>
+            <li><a href="http://myneu.neu.edu/">MyNEU</a></li>
+            <li><a href="http://www.hasbro.com/mylittlepony/en_US/">My Little Pony!</a></li>
+            <li><a href="http://internal.cia.gov/">CIA Intranet</a></li>
+        </ul>
+
+        <script>
+            $(document).ready(function() {
+                var links = [];
+                $('ul li a').each(function() {
+                    var link = $(this).attr('href');
+                    var style = $(this).css('color');
+                    console.log(link + ': ' + style);
+                });
+            });
+        </script>
+    </body>
+</html>
